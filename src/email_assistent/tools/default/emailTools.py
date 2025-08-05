@@ -20,6 +20,11 @@ class Done(BaseModel):
     """E-mail has been sent."""
     done: bool
 
+@tool
+class Question(BaseModel):
+      """Question to ask user."""
+      content: str    
+
 
 @tool
 def schedule_meeting(
